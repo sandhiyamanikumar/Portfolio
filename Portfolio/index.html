@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="header_section" id="home">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-------close icon------->
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <!-------menu icon------->
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header_container section_container">
+            <p>Bachelor of Engineering</p>
+            <h1>Hi, I'm <span>Sandhiya </span><br>From India</h1>
+        </div>
+    </section>
+
+    <!-------about------->
+
+    <section id="about" class="section_container">
+        <div class="about_content">
+            <div class="about_me">
+                <h1 class="section_header">About Me</h1>
+                <p>I'm a 3rd year student pursuing graduation in Muthayammal Engineering College.Aspiring for a
+                    challenging career in Web Development as to use my learnt skills and getting involved with
+                    new
+                    technologies that can help me to improve my technical skills.As a Web Developer, I am
+                    Resposible
+                    for Designing and Developing Web pages.</p>
+            </div>
+            <div class="tab_titles">
+                <p class="tab_links active_link" onclick="opentab('education')">Education</p>
+                <p class="tab_links" onclick="opentab('skills')">Skills</p>
+                <p class="tab_links" onclick="opentab('internship')">Internship</p>
+            </div>
+            <div class="tab_contents active_tab" id="education">
+                <ul>
+                    <li><span>2021-2025</span><br> BE - Computer Science Engineering<br> CGPA : 8.28</li>
+                    <li><span>2020 - 2021</span><br>12th Class<br>Percentage : 93%</li>
+                    <li><span>2018 - 2019</span><br>10th Class<br>Percentage : 90%</li>
+                </ul>
+            </div>
+            <div class="tab_contents" id="skills">
+                <ul>
+                    <li><span>Web Development</span><br>HTML | CSS | JAVASCRIPT</li>
+                    <li><span>Programming Knowledge</span><br>C | Basics of JAVA</li>
+                </ul>
+            </div>
+            <div class="tab_contents" id="internship">
+                <ul>
+                    <li><span>Full Stack Development</span><br> Learned Frontend Technologies<br> (HTML |CSS
+                        |Javascript)<br>learned the basics of Backend Technologies<br>(NodeJS | ExpressJs |
+                        Mongo DB)</li>
+                    <li><span>Web Development</span><br>Earned how to create a website using HTML , CSS and JS
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!------------services------------>
+
+    <section id="services" class="section_container">
+        <h1 class="section_header">My Services </h1>
+        <div class="service_list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Frontend Development</p>
+                <p>Embarking on the journey of web development as a student, I am passionate about translating
+                    creative ideas into functional websites. </p>
+            </div>
+
+            <div>
+                <h2>Programming</h2>
+                <p>C , Java </p>
+                <p> I'm ready to dive into the world of problem-solving. I analyze problems, design efficient
+                    algorithms, and implement robust solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!------------portfolio---------->
+
+    <section id="portfolio" class="section_container">
+        <h1 class="section_header">My Frontend Project</h1>
+        <div class="project_list">
+            <div class="project">
+                <img src="image/crudimage.jpeg" alt="crud project image">
+                <div class="project_content">
+                    <h3>CRUD Project</h3>
+                    <a href="https://github.com/sandhiyamanikumar/CRUD.git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="image/landingpageimg.png" alt="yoga landing page image">
+                <div class="project_content">
+                    <h3>Landing Page Project</h3>
+                    <a href="https://github.com/sandhiyamanikumar/LandingPage"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="image/calculatorimg.png" alt="calculator img">
+                <div class="project_content">
+                    <h3>Calculator</h3>
+                    <a href="https://github.com/sandhiyamanikumar/Calculator"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------contact--------- -->
+
+    <section id="contact" class="section_container">
+        <div class="row ">
+            <div class="contact_1">
+                <h2 class="section_header">Contact Me</h2>
+                <p><a href="sandhiyamanikumar2004@gmail.com"><i class="fa-solid fa-envelope"></i>
+                        sandhiyamanikumar2004@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i> +91234567892</p>
+                <div class="social_icon">
+                    <a href="https://www.linkedin.com/in/sandhiya-m2307"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sandhiyamanikumar"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact_2">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!------------footer section------------->
+
+    <div class="copyright">
+        <p>Copyright &copy; Sandhiya.</p>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab_links");
+        var tabcontents = document.getElementsByClassName("tab_contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active_link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active_tab");
+            }
+            event.currentTarget.classList.add("active_link");
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
